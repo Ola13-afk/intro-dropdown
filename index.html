@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Snap helps teams stay in sync and make remote work productive."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <a class="brand-link" href="#home" aria-label="Snap home">
+        <img src="./images/logo.svg" alt="Snap" class="brand-logo" />
+      </a>
+
+      <button
+        class="mobile-menu-toggle mobile-menu-open"
+        id="mobile-menu-open"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <img src="./images/icon-menu.svg" alt="" />
+      </button>
+
+      <div class="navigation-shell" id="navigation-shell">
+        <div class="mobile-menu-top">
+          <button
+            class="mobile-menu-toggle mobile-menu-close"
+            id="mobile-menu-close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            <img src="./images/icon-close-menu.svg" alt="" />
+          </button>
+        </div>
+
+        <nav
+          id="primary-navigation"
+          class="primary-navigation"
+          aria-label="Main navigation"
+        >
+          <ul class="nav-list">
+            <li class="nav-item dropdown" data-dropdown>
+              <button
+                class="nav-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="features-menu"
+              >
+                Features
+                <img
+                  class="dropdown-arrow"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <ul class="dropdown-menu features-menu" id="features-menu" hidden>
+                <li>
+                  <a href="#todo">
+                    <img src="./images/icon-todo.svg" alt="" />
+                    Todo List
+                  </a>
+                </li>
+                <li>
+                  <a href="#calendar">
+                    <img src="./images/icon-calendar.svg" alt="" />
+                    Calendar
+                  </a>
+                </li>
+                <li>
+                  <a href="#reminders">
+                    <img src="./images/icon-reminders.svg" alt="" />
+                    Reminders
+                  </a>
+                </li>
+                <li>
+                  <a href="#planning">
+                    <img src="./images/icon-planning.svg" alt="" />
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown" data-dropdown>
+              <button
+                class="nav-link dropdown-trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="company-menu"
+              >
+                Company
+                <img
+                  class="dropdown-arrow"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </button>
+              <ul class="dropdown-menu company-menu" id="company-menu" hidden>
+                <li><a href="#history">History</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#careers">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="account-actions">
+          <a class="login-link" href="#login">Login</a>
+          <a class="register-link" href="#register">Register</a>
+        </div>
+      </div>
+
+      <div class="mobile-backdrop" id="mobile-backdrop" hidden></div>
+    </header>
+
+    <main id="home" class="hero">
+      <div class="hero-copy">
+        <picture class="hero-picture-mobile">
+          <img
+            src="./images/image-hero-mobile.png"
+            alt="A person working on a laptop surrounded by colourful shapes"
+          />
+        </picture>
+
+        <div class="hero-text">
+          <h1>
+            Make<br class="desktop-break" />
+            remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a class="learn-more" href="#learn-more">Learn more</a>
+        </div>
+
+        <ul class="client-logos" aria-label="Our clients">
+          <li><img src="./images/client-databiz.svg" alt="Databiz" /></li>
+          <li><img src="./images/client-audiophile.svg" alt="Audiophile" /></li>
+          <li><img src="./images/client-meet.svg" alt="Meet" /></li>
+          <li><img src="./images/client-maker.svg" alt="Maker" /></li>
+        </ul>
+      </div>
+
+      <picture class="hero-picture-desktop">
+        <img
+          src="./images/image-hero-desktop.png"
+          alt="A person working on a laptop surrounded by colourful shapes"
+        />
+      </picture>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
